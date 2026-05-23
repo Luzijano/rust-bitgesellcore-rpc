@@ -15,7 +15,7 @@ jobs:
                     - rust: nightly
                       env:
                           RUSTFMTCHECK: false
-                    - rust: 1.56.1
+                    - rust: 1.71.1
                       env:
                           RUSTFMTCHECK: false
         steps:
