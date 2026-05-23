@@ -20,7 +20,7 @@ name = "bitgesellcore_rpc"
 path = "src/lib.rs"
 
 [dependencies]
-bitcoincore-rpc-json = { version = "0.17.0", path = "../json" }
+bitcoincore-rpc-json = { package = "bitgesellcore-rpc-json", version = "0.17.1", path = "../json" }
 
 log = "0.4.5"
 jsonrpc = "0.14.0"
