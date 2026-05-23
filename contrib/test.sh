@@ -6,7 +6,7 @@ echo "RUSTFMTCHECK: \"$RUSTFMTCHECK\""
 echo "BITCOINVERSION: \"$BITCOINVERSION\""
 echo "PATH: \"$PATH\""
 
-if [ -n "$RUSTFMTCHECK" ]; then
+if [ "$RUSTFMTCHECK" = "true" ]; then
   rustup component add rustfmt
   cargo fmt --all -- --check
 fi
